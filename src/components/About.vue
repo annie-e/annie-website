@@ -80,7 +80,7 @@ img {
 
 @media screen and (max-width: 600px) {
     .description {
-        width: 80%;
+        width: 100%;
     }
 }
 </style>
