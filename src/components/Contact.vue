@@ -18,12 +18,19 @@ const handleClose = () => {
     visible.value = false;
 };
 
+const validateEmail = (email) => {
+    const reg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return reg.test(email);
+};
+
 const sendEmail = (e) => {
     visible.value = true;
     if (!name.value || name.value.length <= 2) {
         return errorMsg.value = "You must enter your full name";
     } else if (!email.value) {
         return errorMsg.value = "You must enter your email address"
+    } else if (!validateEmail(email.value)) {
+        return errorMsg.value = "Your email is not valid"
     } else if (!message.value) {
         return errorMsg.value = "You must enter your message"
     }
