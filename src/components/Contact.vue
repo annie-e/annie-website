@@ -134,4 +134,10 @@ label {
     justify-content: center;
     height: 300px;
 }
+
+@media screen and (max-width: 600px) {
+    .formfield {
+        width: 80vw !important;
+    }
+}
 </style>

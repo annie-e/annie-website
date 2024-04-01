@@ -52,6 +52,7 @@ h5 {
 .project-desc {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .project-info {
@@ -61,6 +62,7 @@ h5 {
 .project-btn {
     display: flex;
     justify-content: start;
+    align-items: center;
     margin-top: 20px;
 }
 
@@ -76,10 +78,24 @@ img {
     border: 5px solid white;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     img {
-        width: calc(27em - 18vw);
-        height: calc(16em - 10vw);
+        width: calc(21em - 18vw);
+        height: calc(13em - 10vw);
+        margin-top: 30px;
+    }
+    .project-info {
+        width: 100%;
+    }
+    .project-btn{
+        justify-content: center;
+    }
+    .btn {
+        height: 30px;
+        padding: 4px 30px;
+    }
+    .project-desc{
+        flex-direction: column;
     }
 }
 </style>

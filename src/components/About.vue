@@ -59,6 +59,7 @@ import { LinkedinOutlined, GithubOutlined, InstagramOutlined } from '@ant-design
     justify-content: space-around;
     align-items: center;
     padding: 40px 0px;
+    flex-wrap: wrap;
 }
 
 .description {
@@ -75,5 +76,11 @@ import { LinkedinOutlined, GithubOutlined, InstagramOutlined } from '@ant-design
 
 img {
     padding: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .description {
+        width: 80%;
+    }
 }
 </style>

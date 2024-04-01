@@ -56,4 +56,11 @@ const fetchProject = async()=> {
     margin: 0 60px;
     padding: 0px 0px 40px;
 }
+
+@media screen and (max-width: 600px) {
+    .project-tabs {
+        margin: 0 20px;
+        padding-bottom: 0px;
+    }
+}
 </style>
